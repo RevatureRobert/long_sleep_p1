@@ -8,7 +8,7 @@ import java.sql.SQLException;
  * Handles connection pooling and management.
  */
 public class ConnectionManager {
-    private static final int MAX_CONNECTIONS = 4;
+    private static final int MAX_CONNECTIONS = 10;
     private static Connection[] conns = new Connection[MAX_CONNECTIONS];
     // number of connections starts at 0, increases as new connections are created
     private static int numConns = 0;
